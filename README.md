@@ -4,7 +4,7 @@ SIP Service Monitoring
 #Licensing Information: READ LICENSE
 
 #Project source can be downloaded from
-##https://github.com/chanon-m/sip2ban.github.io.git
+##https://github.com/chanon-m/sip-healthy.git
 
 #Author & Contributor
 
@@ -17,7 +17,7 @@ Reported bugs or requested new feature can be sent to chanonm@live.com
 
 ```
 
-# git clone https://github.com/chanon-m/sip2ban.github.io.git
+# git clone https://github.com/chanon-m/sip-healthy.git
 
 ```
 
@@ -25,7 +25,7 @@ Reported bugs or requested new feature can be sent to chanonm@live.com
 
 ```
 
-# cp ./sip2ban.github.io/sip2ban.pl /etc
+# cp ./sip-healthy/sip_healthy.pl /usr/lib/check_mk_agent/local/300
 
 ```
 
@@ -33,18 +33,6 @@ Reported bugs or requested new feature can be sent to chanonm@live.com
 
 ```
 
-# chmod 755 /etc/sip2ban.pl
-
-```
-
-* Create a crontab job on your server
-
-If you want sip2ban.pl to run every 5 minutes, you should code the time as:
-
-```
-
-# crontab -e 
-
-*/5 * * * *      /etc/sip2ban.pl >> /var/log/sip2ban.log&
+# chmod 755 /usr/lib/check_mk_agent/local/300/sip_healthy.pl
 
 ```
