@@ -4,9 +4,9 @@ use warnings;
 use Net::SIP;
 
 my $current = `date +"%m-%d-%Y %T"`;
-my $registrar = "98.158.144.27";
-my $username = "8188025205";
-my $password = "85006249";
+my $registrar = "Your SIP Server IP Address";
+my $username = "User Name";
+my $password = "Passsword";
 my $status;
 my $message;
 
