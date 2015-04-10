@@ -1,5 +1,7 @@
 # SIP-Healthy
 SIP Service Monitoring
+
+![Alt text](http://www.icalleasy.com/images/basic_voip_system.png "Basic VOIP System") 
  
 #Licensing Information: READ LICENSE
 
