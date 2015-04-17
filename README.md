@@ -69,6 +69,6 @@ Reported bugs or requested new feature can be sent to chanonm@live.com
 
 ```
 
-# ./etc/call_quality_srv.pl [local ip address] [port number]
+# ./etc/call_quality_srv.pl [local SIP Server IP address] [port number]
 
 ```
