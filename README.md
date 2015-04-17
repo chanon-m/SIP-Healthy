@@ -15,7 +15,7 @@ Chanon Mingsuwan
 Reported bugs or requested new feature can be sent to chanonm@live.com
 
 #How to run a file
-* Download files in your server
+* Download files in your remote server
 
 ```
 
@@ -23,11 +23,12 @@ Reported bugs or requested new feature can be sent to chanonm@live.com
 
 ```
 
-* Copy sip_healthy.pl to /usr/lib/check_mk_agent/local/300
+* Copy sip_healthy.pl and call_quality_report.pl to /usr/lib/check_mk_agent/local/300
 
 ```
 
 # cp ./sip-healthy/sip_healthy.pl /usr/lib/check_mk_agent/local/300
+# cp ./sip-healthy/call_quality_report.pl /usr/lib/check_mk_agent/local/300
 
 ```
 
@@ -36,5 +37,31 @@ Reported bugs or requested new feature can be sent to chanonm@live.com
 ```
 
 # chmod 755 /usr/lib/check_mk_agent/local/300/sip_healthy.pl
+# chmod 755 /usr/lib/check_mk_agent/local/300/call_quality_report.pl
 
 ```
+
+* Download files in your server
+
+```
+
+# git clone https://github.com/chanon-m/sip-healthy.git
+
+```
+
+* Copy call_quality_srv.pl to /etc
+
+```
+
+# cp ./sip-healthy/call_quality_srv.pl /etc
+
+```
+
+* Make a file executable
+
+```
+
+# chmod 755 /etc/call_quality_srv.pl
+
+```
+
