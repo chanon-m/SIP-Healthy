@@ -65,3 +65,10 @@ Reported bugs or requested new feature can be sent to chanonm@live.com
 
 ```
 
+* Run call_quality_srv.pl as server in your server
+
+```
+
+# ./etc/call_quality_srv.pl [local ip address] [port number]
+
+```
