@@ -15,7 +15,7 @@ Chanon Mingsuwan
 Reported bugs or requested new feature can be sent to chanonm@live.com
 
 #How to run a file
-* Download files in your remote server
+* Download files to your remote server
 
 ```
 
@@ -41,7 +41,7 @@ Reported bugs or requested new feature can be sent to chanonm@live.com
 
 ```
 
-* Download files in your server
+* Download files to your server
 
 ```
 
