@@ -9,18 +9,21 @@ my $username = "User Name";
 my $password = "Passsword";
 my $status;
 my $message;
+my $value;
 
 my $nmap = `/usr/bin/nmap -T5 -P0 -sU -p5060 $registrar`;
 chomp($nmap);
 if(index($nmap,"open|filtered") == -1) {
+  $value = 0;
   $status = 1;
   $message = "Closed";
 } else {
+  $value = 1;
   $status = 0;
   $message = "Open";
 }
 
-print "$status SIP_Service status=$status; Server is $registrar, SIP Service is $message, $current";
+print "$status SIP_Service status=$value; Server is $registrar, SIP Service is $message, $current";
 
 my $ua = Net::SIP::Simple->new(
 registrar => $registrar,
@@ -32,11 +35,13 @@ auth => [ $username,$password ],
 
 # Register agent
 if($ua->register( expires => 1800 )) {
+  $value = 1;
   $status = 0;
   $message = "UP";
 }else {
+  $value = 0;
   $status = 2;
   $message = "DOWN";
 }
 
-print "$status SIP_Register status=$status; Server is $registrar, $current\n";
+print "$status SIP_Register status=$value; Server is $registrar, $current\n";
