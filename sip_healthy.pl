@@ -2,6 +2,7 @@
 use strict;
 use warnings;
 use Net::SIP;
+use Time::HiRes qw( time );
 
 my $current = `date +"%m-%d-%Y %T"`;
 my $registrar = "Your SIP Server IP Address";
@@ -33,9 +34,12 @@ auth => [ $username,$password ],
 
 );
 
+my $start = time();
+
 # Register agent
 if($ua->register( expires => 1800 )) {
-  $value = 1;
+  my $end = time();
+  $value = sprintf("%.2f",$end - $start);
   $status = 0;
   $message = "UP";
 }else {
