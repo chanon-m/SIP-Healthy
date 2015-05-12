@@ -48,4 +48,4 @@ if($ua->register( expires => 1800 )) {
   $message = "DOWN";
 }
 
-print "$status SIP_Register status=$value; Server is $registrar, $current\n";
+print "$status SIP_Register response=$value; Server is $registrar, $value s, $current\n";
