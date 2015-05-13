@@ -3,6 +3,12 @@ SIP Service Monitoring
 
 ![Alt text](http://www.icalleasy.com/images/sip_healthy_0.png "Basic VOIP System") 
  
+#Snapshot
+
+![Alt text](http://www.icalleasy.com/images/sip_register.png "Snapshot 1") 
+
+![Alt text](http://www.icalleasy.com/images/sip_service.png "Snapshot 2") 
+
 #Licensing Information: READ LICENSE
 
 #Project source can be downloaded from
